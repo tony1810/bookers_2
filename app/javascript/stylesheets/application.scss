@@ -1,0 +1,16 @@
+@use '~bootstrap/scss/bootstrap';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  margin-top: 10px;
+}
+
+.offset-mid-1{
+  margin-left: 8.3%;
+}
+

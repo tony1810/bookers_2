@@ -1,0 +1,24 @@
+
+<div class="error">
+  <% if @book.errors.any?  %>
+    <%= @book.errors.count %>errors prohibited this book from being saved:
+      <ul>
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+  <% end %>
+</div>
+
+<div class="container px-sm-0 max-auto">
+  <div class="row">
+    <div class = "col-md-3">
+      <%= render 'userinfo', user: @user %>
+      <%= render 'new' %>
+    </div>
+    <div class = "col-md-8 offset-md-1">
+      <h2>Books</h2>
+      <%= render 'bookinfo', books: @books %>
+    </div>
+  </div>
+</div>
